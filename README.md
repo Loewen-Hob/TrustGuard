@@ -1,85 +1,85 @@
 
 ---
+
 <div align="center"> 
 
-# TrustGuard - Marketing Video Content Verifier
+# TrustGuard - 营销号视频内容验证工具
 
 </div>
 
 <div align="center">
-      English| <a href="README_CN.md" >简体中文</a>
+      简体中文 | <a href="README_EN.md" >English</a>
 </div>
 
-## Introduce
+## 项目介绍
 
-**TrustGuard** is a powerful tool designed to identify and verify the authenticity of content in marketing videos. With the rise of misleading and deceptive information propagated by marketing accounts, this project aims to provide users with a reliable method to evaluate whether the content they encounter is trustworthy. By leveraging advanced technologies in natural language processing, source verification, and multimedia analysis, **TrustGuard** helps users avoid falling for false claims and make informed decisions.
+**TrustGuard** 是一款旨在识别和验证营销视频内容真实性的强大工具。随着社交媒体平台上营销号传播的误导性和虚假信息不断增多，**TrustGuard** 项目旨在为用户提供一种可靠的方式来评估他们遇到的内容是否可信。通过利用先进的自然语言处理、来源验证和多媒体分析技术，**TrustGuard** 帮助用户避免受虚假信息的影响，并做出明智的决策。
 
-## Table of Contents
+## 目录
 
-- [Overview](#overview)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [概述](#概述)
+- [功能](#功能)
+- [工作原理](#工作原理)
+- [安装](#安装)
+- [使用](#使用)
+- [贡献](#贡献)
 
+## 概述
 
-## Overview
+在当今的数字时代，营销号（通常被称为“营销视频”）充斥在社交媒体平台上，许多内容往往包含夸大的宣传或完全错误的信息。这些账号通过吸引流量、操控情绪并误导观众以达到商业目的。**TrustGuard** 通过为用户提供一个简单易用的工具，帮助他们验证所接触内容的真实性，特别是在营销视频领域。
 
-In today’s digital age, marketing accounts (commonly known as "marketing videos") flood social media platforms with content that often contains exaggerated claims or outright falsehoods. These accounts thrive on driving traffic, manipulating emotions, and misleading audiences for commercial gain. **TrustGuard** addresses this issue by providing users with an easy-to-use tool to validate the authenticity of the content they consume, focusing specifically on marketing videos.
+## 功能
 
-## Features
+- **内容识别**：通过分析视频标题、语言和视觉线索等特征，识别出营销号内容。
+- **来源验证**：通过与可靠和权威的来源进行交叉验证，验证营销视频中所述内容的来源。
+- **可信度评分**：根据视频的声明准确性和来源可靠性，提供一个可信度评分。
+- **多媒体分析**：利用计算机视觉和文本提取技术，分析视频中的图像和音频内容，标记出潜在的误导性或欺诈性声明。
+- **透明性**：输出详细的参考文献和引用链接，帮助用户追溯信息的原始来源。
 
-- **Content Identification**: Identifies content from marketing accounts by analyzing video features such as titles, language, and visual cues.
-- **Source Verification**: Verifies the origins of claims made within marketing videos by cross-referencing with reliable and authoritative sources.
-- **Credibility Score**: Provides a credibility score based on the accuracy of the video’s claims and the reliability of its sources.
-- **Multimedia Analysis**: Uses computer vision and text extraction to analyze video images and audio content, flagging potentially misleading or fraudulent claims.
-- **Transparency**: Outputs detailed references and citation links, helping users trace back to original sources of the information.
+## 工作原理
 
-## How It Works
+1. **内容抓取**：我们收集视频的元数据，包括标题、描述以及来自字幕和文字信息的内容。
+2. **文本分析**：系统扫描视频的脚本和视觉元素，识别出营销内容中常见的模式，如夸张的语言或误导性声明。
+3. **来源交叉验证**：通过先进的算法，我们检查视频中声明的信息是否得到了可靠来源的支持，如可信的新闻机构、学术论文或政府出版物。
+4. **报告生成**：生成清晰简明的报告，提供可信度评分、真实性来源，并给出进一步验证的建议。
 
-1. **Content Scraping**: We gather video metadata, including titles, descriptions, and textual information from subtitles and captions.
-2. **Textual Analysis**: The system scans the script and visual components for common patterns found in marketing content, such as sensational language or misleading claims.
-3. **Source Cross-Referencing**: Using advanced algorithms, we check if the claims made in the video are supported by verified sources, such as trusted news outlets, academic papers, or governmental publications.
-4. **Report Generation**: The result is a clear and concise report, providing the user with a credibility score, sources of truth, and suggestions for further verification.
+## 安装
 
-## Installation
+安装 **TrustGuard**，请按照以下步骤操作：
 
-To install **TrustGuard**, follow these steps:
-
-1. Clone the repository:
+1. 克隆仓库：
    ```bash
    git clone https://github.com/your-username/TrustGuard.git
    ```
 
-2. Install dependencies:
+2. 安装依赖：
    ```bash
    cd TrustGuard
    pip install -r requirements.txt
    ```
 
+## 使用
 
+安装完成后，您可以通过命令行界面（CLI）使用 **TrustGuard**，或将其集成到现有项目中。
 
-## Usage
-
-Once installed, you can use **TrustGuard** through the command line interface (CLI) or integrate it into your existing projects.
-
-### Command Line Interface:
+### 命令行界面：
 ```bash
 python trustguard.py --url "https://marketing-video-url.com"
 ```
 
-This command will analyze the provided video URL and return a credibility report.
+此命令将分析提供的视频 URL，并返回可信度报告。
 
-### API Integration:
-For developers, we offer an API endpoint to integrate **TrustGuard** into custom applications. [API Documentation](#)
+### API 集成：
+对于开发者，我们提供了一个 API 接口，您可以将 **TrustGuard** 集成到自定义应用程序中。[API 文档](#)
 
-## Contributing
+## 贡献
 
-We welcome contributions from the community! If you’d like to contribute to **TrustGuard**, feel free to fork the repository and submit a pull request. We encourage improvements on the following:
+我们欢迎社区的贡献！如果您想为 **TrustGuard** 做出贡献，可以自由地 fork 仓库并提交 Pull Request。我们鼓励以下方面的改进：
 
-- Expanding the detection of marketing patterns in videos.
-- Enhancing the source verification capabilities.
-- Improving the accuracy of credibility scores.
+- 扩展营销视频模式的检测。
+- 增强来源验证能力。
+- 改善可信度评分的准确性。
 
-Before contributing, please review our [contributing guidelines](CONTRIBUTING.md).
+在贡献之前，请查看我们的 [贡献指南](CONTRIBUTING.md)。
+
+
